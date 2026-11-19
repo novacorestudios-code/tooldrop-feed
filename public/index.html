@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToolDrop — Power Tool Deals &amp; Battery Value Calculator</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #1b1b1f;
+      --muted: #52525b;
+      --accent: #d9531e;
+      --border: #e4e4e7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121214;
+        --card: #1c1c20;
+        --text: #f4f4f5;
+        --muted: #a1a1aa;
+        --accent: #ff9100;
+        --border: #2e2e36;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+    }
+    p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      background: var(--accent);
+      color: #ffffff;
+    }
+    a.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>ToolDrop: Power Tool Deals</h1>
+      <p>Track US power-tool drops across DeWalt, Milwaukee, Makita, Ryobi, Bosch, Craftsman, Ridgid, and Harbor Freight — and evaluate battery kit deals instantly in $/Ah.</p>
+      <div class="links">
+        <a class="button" href="./privacy.html">Privacy Policy</a>
+        <a class="button secondary" href="./deals_feed.json">Live Deals Feed (JSON)</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
